@@ -1,3 +1,21 @@
+.bg-img {
+  background-image: url('../../assets/images/parisbg.jpeg') ;
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+  .img-sz {
+    width: 100%;
+    height: auto;
+  }
+ 
+
 .pic-radius {
     border-radius: 50%;
     height: 70px;
@@ -9,12 +27,23 @@
     width: 300px;
 }
 
-.map-rounded {
+@media (min-width: 575.98px) { 
+  .map-rounded {
     border-radius: 14px;
+    /* width: "600px";  */
+    /* height: "450px"; */
+    border: 0;
 }
+ }
+
+
 
 .f-img-r {
     border-radius: 14px;
+}
+
+.r-8 {
+  border-radius: 20px;
 }
 
 @media (max-width: 575.98px) { 
@@ -57,4 +86,92 @@
 
 .pt-sejarah {
   padding-top: 100px;
+}
+
+/* dropdowb scroll */
+.dropdown-menu {
+  max-height: 280px;
+  overflow-y: auto;
+  background-color: #d4aa70 #e4e4e4;
+  scrollbar-width: 1px;
+}
+
+.dropdown-menu::-webkit-scrollbar {
+  width: 3px;
+}
+
+.dropdown-menu::-webkit-scrollbar-track {
+  /* width: 10px; */
+  background: rgb(133, 145, 145);
+}
+
+.dropdown-menu::-webkit-scrollbar-thumb {
+  background-color: blue;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid rgb(136, 81, 133);  /* creates padding around scroll thumb */
+}
+
+/* tabel image */
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+
+
+.table-image {
+  td, th {
+    vertical-align: middle;
+  }
+}
+
+/* profile for lembaga content */
+.card-box {
+  padding: 20px;
+  border-radius: 3px;
+  margin-bottom: 30px;
+  background-color: #fff;
+}
+
+.social-links li a {
+  border-radius: 50%;
+  color: rgba(121, 121, 121, .8);
+  display: inline-block;
+  height: 30px;
+  line-height: 27px;
+  border: 2px solid rgba(121, 121, 121, .5);
+  text-align: center;
+  width: 30px
+}
+
+.social-links li a:hover {
+  color: #797979;
+  border: 2px solid #797979
+}
+.thumb-lg {
+  height: 88px;
+  width: 88px;
+}
+.img-thumbnail {
+  padding: .25rem;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: .25rem;
+  max-width: 100%;
+  height: auto;
+}
+.text-pink {
+  color: #ff679b!important;
+}
+.btn-rounded {
+  border-radius: 2em;
+}
+.text-muted {
+  color: #98a6ad!important;
+}
+h4 {
+  line-height: 22px;
+  font-size: 18px;
 }
